@@ -1,5 +1,14 @@
 import Tag from '../models/tagModel.js';
 
+const listTags = async (req,res) => {
+  try {
+    const tags = await Tag.find();
+    res.json(tags)
+  } catch (error) {
+    res.status(500).json({message: error.message});
+  }
+}
+
 const createTag = async (req, res) => {
   try {
     const { name } = req.body;
@@ -25,4 +34,4 @@ const createTag = async (req, res) => {
   }
 };
 
-export { createTag };
+export { createTag, listTags };

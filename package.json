@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-rest-api",
+  "version": "1.0.0",
+  "description": "A REST API for managing posts and tags using Node.js and MongoDB.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "cloudinary": "^2.5.1",
+    "dotenv": "^8.6.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "Anant Saraswat",
+  "license": "ISC"
+}
